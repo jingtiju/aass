@@ -8,27 +8,27 @@ class Test_1:
         with open("./cc.jpg", "rb") as f:
             allure.attach("aa", f.read(), allure.attach_type.JPG)
         assert True
-    @pytest.allure.serverity(pytest.allure.serverity_level.BLOCKER)
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
     def test_2(self):
         print("#" * 50)
         allure.attach("2222", "2222", allure.attach_type.TEXT)
 
-    @pytest.allure.serverity(pytest.allure.serverity_level.CRITICAL)
+    @pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
     def test_3(self):
         print("#" * 50)
         allure.attach("2222", "2222", allure.attach_type.TEXT)
 
-    @pytest.allure.serverity(pytest.allure.serverity_level.NORMAL)
+    @pytest.allure.severity(pytest.allure.severity_level.NORMAL)
     def test_4(self):
         print("#" * 50)
         allure.attach("2222", "2222", allure.attach_type.TEXT)
 
-    @pytest.allure.serverity(pytest.allure.serverity_level.MINOR)
+    @pytest.allure.severity(pytest.allure.severity_level.MINOR)
     def test_5(self):
         print("#" * 50)
         allure.attach("2222", "2222", allure.attach_type.TEXT)
 
-    @pytest.allure.serverity(pytest.allure.serverity_level.TRIVIAL)
+    @pytest.allure.severity(pytest.allure.severity_level.TRIVIAL)
     def test_6(self):
         print("#" * 50)
         allure.attach("2222", "2222", allure.attach_type.TEXT)
